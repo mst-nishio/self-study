@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./person-input.component.css'],
 })
 export class PersonInputComponent {
-  onCreatePerson() {
-    console.log('created person!');
+  onCreatePerson(personName: string) {
+    console.log('created person! ' + personName);
   }
 }
