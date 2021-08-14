@@ -8,9 +8,9 @@ import { PersonsService } from './persons.service';
 export class PersonsComponent implements OnInit {
   personList: string[];
 
-  constructor(private prsService: PersonsService) {}
+  constructor(private personsService: PersonsService) {}
 
   ngOnInit() {
-    this.personList = this.prsService.persons;
+    this.personList = this.personsService.persons;
   }
 }
