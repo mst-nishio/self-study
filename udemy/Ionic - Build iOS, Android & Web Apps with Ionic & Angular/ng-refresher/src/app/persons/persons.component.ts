@@ -13,14 +13,14 @@ export class PersonsComponent implements OnInit, OnDestroy {
   constructor(private personsService: PersonsService) {}
 
   ngOnInit() {
-    this.personList = this.personsService.persons;
+    this.personListSubs = this.personsService.personChanged.subscribe(
+      (persons) => (this.personList = persons)
+    );
+    this.personsService.fetchPerson();
   }
 
   onRemovePerson(personName: string) {
     this.personsService.removePerson(personName);
-    this.personListSubs = this.personsService.personChanged.subscribe(
-      (persons) => (this.personList = persons)
-    );
   }
 
   ngOnDestroy() {
