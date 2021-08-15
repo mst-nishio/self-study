@@ -13,4 +13,8 @@ export class PersonsComponent implements OnInit {
   ngOnInit() {
     this.personList = this.personsService.persons;
   }
+
+  onRemovePerson(personName: string) {
+    this.personsService.removePerson(personName);
+  }
 }
