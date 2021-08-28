@@ -23,7 +23,7 @@ const OchiaiHiromitsu: Batter1 = {
 
 type TwoWayPlayer = Pitcher1 & Batter1;
 
-const OtaniShohei: TwoWayPlayer={
+const OtaniShohei: TwoWayPlayer = {
   throwingSpeed: 165,
-  battingAverage: 0.286;
-}
+  battingAverage: 0.286,
+};
