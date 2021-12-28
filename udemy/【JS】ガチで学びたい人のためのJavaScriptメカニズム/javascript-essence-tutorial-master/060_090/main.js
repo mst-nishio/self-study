@@ -20,5 +20,3 @@ console.log(bob);
 // Person.prototype.hello = function () {
 //   console.log(`hello ${this.name}`);
 // };
-
-// test
