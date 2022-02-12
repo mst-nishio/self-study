@@ -1,0 +1,7 @@
+{
+  "name": "ionic-angular-course-place-booking",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
